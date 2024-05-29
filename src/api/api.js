@@ -1,7 +1,6 @@
 export const fetchData = async (country) => {
-    const url=String(import.meta.env.VITE_BACKEND_URL)
     try {
-        const response = await fetch(`${url}/universities?country=${country}`);
+        const response = await fetch(`https://backenduniversity.onrender.com/api/universities?country=${country}`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
