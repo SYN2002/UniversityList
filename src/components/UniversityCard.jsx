@@ -7,6 +7,7 @@ const UniversityCard = ({ university }) => {
             className=' h-54 w-full'></img>
             <h2 className="text-xl font-bold mb-2 underline">{university.name || 'Not found'}</h2>
             <p className="text-gray-700 mb-1 text-lg">Country: {university.country}</p>
+            <p className="text-gray-700 mb-1 text-lg">State: {university["state-province"] || 'Not found'}</p>
             <p className="text-gray-700 mb-1 text-lg">Domain: <a href={university.domains[0]} className='text-red-600'>{university.domains[0]}</a></p>
             <a 
                 className="text-blue-600 underline" 
